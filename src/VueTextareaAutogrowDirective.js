@@ -3,6 +3,9 @@ const TextareaAutogrowDirective = {
   inserted: function (el) {
     let observe, minHeight;
 
+    // If used in a component library such as buefy, a wrapper will be used on the component so check if a child is the textarea
+    el = el.tagName.toLowerCase() === 'textarea' ? el : el.querySelector('textarea')
+
     minHeight = parseFloat(getComputedStyle(el).getPropertyValue("min-height"));
 
     if (window.attachEvent) {
