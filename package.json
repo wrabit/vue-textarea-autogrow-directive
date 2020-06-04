@@ -9,9 +9,9 @@
     "lint": "vue-cli-service lint",
     "build:demo": "vue-cli-service build --dest dist/demo src/main.js",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
-    "build:umd": "cross-env NODE_ENV=production rollup --config rollup.config.js --format umd --file dist/plugin/simplealertcomponent.umd.js",
-    "build:es": "cross-env NODE_ENV=production rollup --config rollup.config.js --format es --file dist/plugin/simplealertcomponent.esm.js",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.js --format iife --file dist/plugin/simplealertcomponent.min.js"
+    "build:umd": "cross-env NODE_ENV=production rollup --config rollup.config.js --format umd --file dist/plugin/vue-textarea-autogrow-directive.umd.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config rollup.config.js --format es --file dist/plugin/vue-textarea-autogrow-directive.esm.js",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.js --format iife --file dist/plugin/vue-textarea-autogrow-directive.min.js"
   },
   "dependencies": {
     "core-js": "^3.6.5"
