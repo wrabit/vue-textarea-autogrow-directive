@@ -6,6 +6,7 @@ A vue directive for automatically growing and shrinking the height of textareas.
 ```
 npm install vue-textarea-autogrow-directive
 ```
+<a href="https://wrabit.github.io/vue-textarea-autogrow-directive" target="blank">Demo</a>
 
 ## Features
 

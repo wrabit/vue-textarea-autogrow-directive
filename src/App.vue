@@ -2,6 +2,8 @@
   <div id="app">
     <h1>Vue Textarea Autogrow Directive</h1>
     <textarea v-autogrow></textarea>
+
+    <p><a href="https://github.com/wrabit/vue-textarea-autogrow-directive">github</a></p>
   </div>
 </template>
 <script>
