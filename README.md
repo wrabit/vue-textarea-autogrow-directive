@@ -2,18 +2,18 @@
 
 A vue directive for automatically growing and shrinking the height of textareas.
 
-## Project setup
-```
-npm install vue-textarea-autogrow-directive
-```
-<a href="https://wrabit.github.io/vue-textarea-autogrow-directive" target="blank">Demo</a>
-
 ## Features
 
 - Adjusts height as you type
 - Setting initial height when loaded
 - Adjust height on copy and paste
 - Adjust height when textarea's visibility is hidden (useful when a page is rendered whilst the textarea is hidden and later shown)
+
+## Project setup
+```
+npm install vue-textarea-autogrow-directive
+```
+<a href="https://wrabit.github.io/vue-textarea-autogrow-directive" target="blank">Demo</a>
 
 ## Usage
 
