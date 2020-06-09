@@ -17,7 +17,7 @@ npm install vue-textarea-autogrow-directive
 
 ## Usage
 
-#### Globally
+### Globally
 
 Recommended option if using in more than a couple of components.
 
@@ -34,9 +34,9 @@ Vue.use(VueTextareaAutogrowDirective)
 </template>
 ```
 
-#### In a component
+### In a component
 
-Recommended if using once or twice in your project.
+Recommended if using only once or twice in your project.
 
 ```javascript
 <template>
