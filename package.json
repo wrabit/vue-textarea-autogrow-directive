@@ -13,6 +13,10 @@
     "build:es": "cross-env NODE_ENV=production rollup --config rollup.config.js --format es --file dist/plugin/vue-textarea-autogrow-directive.esm.js",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.js --format iife --file dist/plugin/vue-textarea-autogrow-directive.min.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrabit/vue-quick-acl"
+  },
   "dependencies": {
     "core-js": "^3.6.5"
   },
