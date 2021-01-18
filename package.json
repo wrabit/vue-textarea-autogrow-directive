@@ -1,6 +1,6 @@
 {
   "name": "vue-textarea-autogrow-directive",
-  "version": "0.1.8",
+  "version": "0.1.7",
   "main": "dist/plugin/vue-textarea-autogrow-directive.umd.js",
   "module": "dist/plugin/vue-textarea-autogrow-directive.esm.js",
   "unpkg": "dist/plugin/vue-textarea-autogrow-directive.min.js",
