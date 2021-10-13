@@ -1,8 +1,8 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.VueTextareaAutogrowDirective = {}));
-}(this, (function (exports) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.VueTextareaAutogrowDirective = {}));
+})(this, (function (exports) { 'use strict';
 
   var TextareaAutogrowDirective = {
     name: 'autogrow',
@@ -27,10 +27,7 @@
       var resize = function () {
         el.style.height = "auto";
         var border = el.style.borderTopWidth * 2;
-        el.style.height =
-          (el.scrollHeight < minHeight ? minHeight : el.scrollHeight) +
-          border +
-          "px";
+        el.style.setProperty("height", (( el.scrollHeight < minHeight ? minHeight : el.scrollHeight ) + border) + "px", "important");
       };
 
       // 0-timeout to get the already changed el
@@ -76,8 +73,8 @@
   }
 
   exports.TextareaAutogrowDirective = TextareaAutogrowDirective;
-  exports.default = VueTextareaAutogrowDirective;
+  exports["default"] = VueTextareaAutogrowDirective;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));

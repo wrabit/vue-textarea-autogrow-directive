@@ -21,10 +21,7 @@ const TextareaAutogrowDirective = {
     let resize = () => {
       el.style.height = "auto";
       let border = el.style.borderTopWidth * 2;
-      el.style.height =
-        (el.scrollHeight < minHeight ? minHeight : el.scrollHeight) +
-        border +
-        "px";
+      el.style.setProperty("height", (( el.scrollHeight < minHeight ? minHeight : el.scrollHeight ) + border) + "px", "important");
     };
 
     // 0-timeout to get the already changed el
